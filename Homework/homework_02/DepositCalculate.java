@@ -5,12 +5,11 @@ public class DepositCalculate {
         double depositAmount = Double.parseDouble(args[0]);
         double taxRate = Double.parseDouble(args[1]);
         int year = Integer.parseInt(args[2]);
-        double compoundInterest;
-        double sumToPayment;
-
-        compoundInterest = depositAmount * (Math.pow((1 + taxRate / 100), (year * 12))) - depositAmount;
-        sumToPayment = depositAmount + compoundInterest;
-        System.out.printf("Проценты: %.2f грн.\n", compoundInterest);
-        System.out.printf("Сумма к выплате: %.2f грн.", sumToPayment);
+        for (int i = 1; i <= year; i++) {
+            double compoundInterest = depositAmount * (Math.pow((1 + taxRate / 100), (i * 12))) - depositAmount;
+            double sumToPayment = depositAmount + compoundInterest;
+            System.out.printf(i + "-й год.Начислено процентов: %.2f грн.\n", compoundInterest);
+            System.out.printf("Сумма на депозите: %.2f грн.\n", sumToPayment);
+        }
     }
 }
