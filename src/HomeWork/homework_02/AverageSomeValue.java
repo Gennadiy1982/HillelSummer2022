@@ -1,4 +1,4 @@
-package homework_02;
+package HomeWork.homework_02;
 
 public class AverageSomeValue {
     public static void main(String[] args) {
