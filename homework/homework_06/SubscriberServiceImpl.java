@@ -3,37 +3,36 @@ package homework_06;
 public class SubscriberServiceImpl implements SubscriberService {
 
     @Override
-    public void outOfLimitsDurationCityCall(Subscriber[] subscribers) {
+    public void outOfLimitsDurationCityCall(Subscriber [] subscribers,int limit) {
         System.out.println("Абоненты,которые превысили лимит междугородних разговоров (свыше 50 минут): ");
         System.out.println("------------------------------------------------------------");
         for (Subscriber s : subscribers) {
-            if (s.getDurationCityCall() > 50) {
-
+            if (s.getDurationCityCall() > limit) {
                 System.out.println(s);
             }
         }
     }
 
     @Override
-    public void useLongDistanceCall(Subscriber[] subscribers) {
+    public void useLongDistanceCall(Subscriber[] subscribers,int time) {
         System.out.println();
         System.out.println("Абоненты,которые пользовались междугородней связью: ");
         System.out.println("------------------------------------------------------------");
         for (Subscriber s : subscribers) {
-            if (s.getDurationLongDistanceCall() != 0) {
+            if (s.getDurationLongDistanceCall() != time) {
                 System.out.println(s);
             }
         }
     }
 
     @Override
-    public void negativeBalance(Subscriber[] subscribers) {
+    public void negativeBalance(Subscriber[] subscribers,double balance) {
         System.out.println();
         System.out.println("Количество абонентов с отрицательным балансом: ");
         System.out.println("---------------------------------------------------");
         int count = 0;
         for (Subscriber s : subscribers) {
-            if (s.getBalance() < 0) {
+            if (s.getBalance() < balance) {
                 count++;
             }
         }
@@ -41,11 +40,10 @@ public class SubscriberServiceImpl implements SubscriberService {
     }
 
     @Override
-    public void totalTraffic(Subscriber[] subscribers) {
+    public void totalTraffic(Subscriber[] subscribers,int total) {
         System.out.println();
         System.out.println("Общий объем траффика ");
         System.out.println("-----------------------------------------------------");
-        int total = 0;
         for (Subscriber s : subscribers) {
             total += s.getInternetTraffic();
         }
@@ -53,12 +51,12 @@ public class SubscriberServiceImpl implements SubscriberService {
     }
 
     @Override
-    public void firstLiterOfSurname(Subscriber[] subscribers) {
+    public void firstLiterOfSurname(Subscriber[] subscribers,char firstLiter) {
         System.out.println();
         System.out.println("Сведения об абонентах,фамилия которых начинается на букву 'Б' ");
         System.out.println("------------------------------------------------------");
         for (Subscriber s : subscribers) {
-            if (s.getSurname().charAt(0) == 'Б') {
+            if (s.getSurname().charAt(0) == firstLiter) {
                 System.out.println(s.getSurname() + " " +
                         s.getName() + " "
                         + s.getPatronymicName() + "."
