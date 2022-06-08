@@ -2,7 +2,7 @@ package homework_06;
 
 public class Run {
 
-    static int limit;
+    static int limit = 50;
     static int time = 0;
     static double balance = 0.00;
     static int total = 0;
