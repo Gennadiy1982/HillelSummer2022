@@ -50,7 +50,11 @@ public class DataArray implements Collection {
 
     @Override
     public String get(int index) {
-        return array[index];
+        for (int i = 0; i < array.length; i++) {
+            if (index == i)
+                return array[index];
+            }
+        return "Индекс не существует";
     }
 
     @Override
@@ -78,15 +82,20 @@ public class DataArray implements Collection {
 
     @Override
     public boolean clear() {
+        String[] emptyArray;
         for (int i = 0; i < array.length; i++) {
-            array[i] = null;
+            emptyArray = new String[array.length];
+            for (int j = 0; j < i; j++) {
+                array[j] = emptyArray[j];
+            }
         }
+        count = 0;
         return true;
     }
 
     @Override
     public int size() {
-        return array.length;
+        return count;
     }
 }
 

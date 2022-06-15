@@ -9,13 +9,14 @@ public class Run {
         DataArray array = new DataArray(maxSize);
         DataArray array1 = new DataArray(maxSize);
 
-        System.out.println(array.add(2, "Кафка"));
-        System.out.println(array.add("Оруэлл"));
-        System.out.println(array.delete("Фрэйд"));
-        System.out.println(array.get(7));
-        System.out.println(array.contain("Юнг"));
-        System.out.println(array.equals(array1));
-        System.out.println(array.clear());
+//        System.out.println(array.add("Кафка"));
+//        System.out.println(array.add("Оруэлл"));
+//        System.out.println(array.add(5, "Бэрн"));
+//        System.out.println(array.delete("Бэрн"));
+//        System.out.println(array.get(55));
+//        System.out.println(array.contain("Юнг"));
+//        System.out.println(array.equals(array1));
+//        System.out.println(array.clear());
         System.out.println(array.size());
     }
 }
