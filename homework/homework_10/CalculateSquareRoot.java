@@ -27,7 +27,7 @@ public class CalculateSquareRoot {
             x = -b / (2 * a);
             System.out.println("Уравнение имеет единственный корень: x = " + x);
         } else {
-            System.out.println("Не имеет корней");
+            System.out.println("Не имеет решения");
         }
     }
 }
