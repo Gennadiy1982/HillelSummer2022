@@ -23,3 +23,6 @@
 hs_err_pid*
 /.idea/
 /out/
+/mvn/MyFirstMvnApp/target/
+/mvn/mvnApp/.idea/
+/mvn/mvnApp/target/

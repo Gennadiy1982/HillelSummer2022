@@ -1,4 +1,4 @@
-package homework_06;
+package homework_05.homework_06;
 
 public class DataGeneration {
     public static Subscriber[] getSubscriberArray() {
