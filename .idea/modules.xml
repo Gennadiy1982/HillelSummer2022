@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/HillelSummer2022.iml" filepath="$PROJECT_DIR$/.idea/HillelSummer2022.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvn/mvnApp/MvnApp.iml" filepath="$PROJECT_DIR$/mvn/mvnApp/MvnApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyFirstMvn/MyFirstMvn.iml" filepath="$PROJECT_DIR$/MyFirstMvn/MyFirstMvn.iml" />
     </modules>
   </component>
 </project>
