@@ -11,8 +11,8 @@ public class Run {
 
 //        System.out.println(array.add("Кафка"));
 //        System.out.println(array.add("Оруэлл"));
-//        System.out.println(array.add(5, "Бэрн"));
-//        System.out.println(array.delete("Бэрн"));
+//        System.out.println(array.add(5, "Берн"));
+//        System.out.println(array.delete("Берн"));
 //        System.out.println(array.get(55));
 //        System.out.println(array.contain("Юнг"));
 //        System.out.println(array.equals(array1));
